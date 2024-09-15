@@ -1,0 +1,447 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width:100%;
+    height:100%;
+}
+body {
+    background: url('62802.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+  
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh; 
+}
+.links{
+    width:20vw;
+    background-image: url("Logo.png");
+    background-size: cover;
+    background-position: center;
+    height: 45%;
+    margin-top: 40px;
+}
+.logo{
+    width: 18rem;
+    height: 12rem;
+}
+.social{
+    margin:2rem;
+    width:80vw;
+    text-align: right;
+}
+.social, a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7); 
+    background-clip: text; 
+    color: transparent; 
+    margin-top: 50px;
+}
+.social, a:nth-of-type(1){
+    padding-right: 50px;
+}
+.social, a:nth-of-type(2){
+    padding-right: 50px;
+}
+.social, a:nth-of-type(3){
+    padding-right: 50px;
+}
+i{
+    font-size:30px;
+    padding-right:40px;
+    margin-top: 35px;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7); 
+    background-clip: text; 
+    color: transparent; 
+}
+.media{
+    margin-left:4rem;
+}
+main{
+    display: flex;
+    height:100vh;
+    overflow-x: hidden;
+}
+.left{
+    width: 40%;
+    align-content: center;
+    margin-bottom: 11rem;
+    position: relative;
+}
+.name,h2{
+    font-size: 3.2rem;
+    margin-left: 2rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent; 
+}
+span{
+    font-size:4.5rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7); 
+    background-clip: text; 
+    color: transparent; 
+}
+h5{
+    font-size: 1.2rem;
+    margin-left:4rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent; 
+}
+.right {
+    width: 30%;
+    height: 60%;
+    background-image: url("DSC_0876.JPG");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 55px auto;  
+}
+
+h4{
+    font-size: 1.2rem;
+    margin-left:2rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent; 
+}
+.intro{
+    display: flex;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent; 
+}
+.title,li{
+    font-size: 2.2rem;
+    margin-left:4rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent; 
+    width: 10vw;
+}
+.info{
+    width:80vw;
+    height:auro;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: 1px solid  white;
+    margin-top: 2.5rem;
+}
+h4{
+    margin-top: 2rem;
+}
+.info, li{
+    font-size: 1rem;
+}
+.Skl_left, .Skl_middle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin: 15px 0;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.skill{
+    display:flex ;
+}
+.Skl_left{
+    margin-left: 2rem;
+}
+.Skl_middle{
+    margin-left: 15rem;
+}
+.Skl_right{
+    margin-left: 15rem;
+}
+p{
+    font-size: 2rem;
+    margin-top: 4rem ;
+}
+.bar {
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+}
+
+.c-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: cload 2s ease-out forwards;
+}
+@keyframes cload {
+    from { width: 0; }
+    to { width:80%; }
+}
+.python-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: pyload 2s ease-out 0.2s forwards;
+}
+@keyframes pyload {
+    from { width: 0; }
+    to { width:60%; } 
+}
+
+.html-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: htload 2s ease-out 0.2s forwards;
+}
+@keyframes htload {
+    from { width: 0; }
+    to { width:80%; } 
+}
+.css-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: cssload 2s ease-out 0.2s forwards;
+}
+@keyframes cssload {
+    from { width: 0; }
+    to { width: 70%; } 
+}
+.js-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: jsload 2s ease-out 0.2s forwards;
+}
+@keyframes jsload {
+    from { width: 0; }
+    to { width:30%; } 
+}
+.react-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: reload 2s ease-out 0.2s forwards;
+}
+@keyframes reload {
+    from { width: 0; }
+    to { width:30%; } 
+}
+.tailwind-progress {
+    height: 100%;
+    background-color: #4caf50; 
+    border-radius: 25px;
+    animation: tailload 2s ease-out 0.2s forwards;
+}
+@keyframes tailload {
+    from { width: 0; }
+    to { width:40%; } 
+}
+h7{
+    font-size: 2.2rem;
+    margin-left:4rem;
+    margin-top: 10rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent; 
+    width: 12rem;
+}
+
+.details{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+form {
+    width: 50%;                          
+    margin-right: 27rem;
+}
+label{
+    font-size: 1.5rem;
+    margin-left:4rem;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);
+    background-clip: text; 
+    color: transparent; 
+}
+fieldset {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid  white;
+    padding: 15px;  
+    text-align: center;
+    height: 65vh;
+    width: 60vw;
+    border-radius: 5px;  
+    padding-right: 8rem;  
+    padding-top: 3rem;
+}
+#names {
+    width: 13rem;      
+}
+#email{
+    width: 13rem; 
+    margin-left: 10px;
+}
+input, textarea{
+    color: white;
+    background-color : rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+textarea{
+    margin-left: 5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.Me {
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7);  
+    background-clip: text; 
+    color: transparent;          
+    font-size: 3rem;          
+    text-align: center; 
+    font-weight: bolder;    
+}
+button{
+    width: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 7px;
+}
+
+#send {
+    background-color: #7363F7;    
+    color: white;                 
+    border: none;                 
+    padding: 10px 20px;           
+    border-radius: 5px;           
+    cursor: pointer;              
+    font-size: 15px;              
+    width: 80px;
+    margin-left: 4rem;
+  }
+  
+#reset {
+    background-color:#7BD6C6;  
+    color: white;                  
+    border: none;                  
+    padding: 10px 20px;            
+    border-radius: 5px;            
+    cursor: pointer;               
+    font-size: 15px;               
+    width:80px;
+    margin-left: 20px;
+}  
+@media (max-width:600px){
+.links{
+    margin-top: 20px;
+    width:35vw;
+}
+.social, a{
+    font-size: 1rem;
+    margin-top: 38px;
+}
+.social, a:nth-of-type(1){
+    padding-right: 25px;
+}
+.social, a:nth-of-type(2){
+    padding-right: 25px;
+}
+.social, a:nth-of-type(3){
+    padding-right: 25px;
+}
+.right {
+    width: 40%;
+    height:40%;  
+}
+.name,h2{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+h5{
+    font-size: 1.2rem;
+    margin-left:10px;
+}
+i{
+    font-size:35px;
+}
+span{
+    font-size: 3rem;
+}
+.media{
+    margin-left: auto;
+}
+
+
+}
+@media (max-width:370px){
+.links{
+    width: 0;
+    margin-top: 20px;
+}
+.social, a{
+    font-size: 1rem;
+    margin-top: 25px;
+    display:flex;
+}
+.social, a:nth-of-type(1){
+    padding-right: 22px;
+}
+.social, a:nth-of-type(2){
+    padding-right: 20px;
+}
+.social, a:nth-of-type(3){
+    padding-right: 20px;
+}
+.left{
+    margin-bottom: 19rem; 
+}
+.right {
+    width: 50%;
+    height:28%;  
+}
+.name,h2{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+h5{
+    font-size: 1.2rem;
+    margin-left:10px;
+}
+span{
+    font-size: 3rem;
+}
+.media{
+    margin-left:10px;
+}
+i{
+    font-size:25px;
+    padding-right: 1rem;
+    margin-top: 35px;
+    background: linear-gradient(to right, #7BD6C6, #718EC2, #7363F7); /* Gradient colors */
+    background-clip: text; 
+    color: transparent;
+}
+
+
+    
+}
+  
+  
+
+
+
+
+
