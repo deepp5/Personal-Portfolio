@@ -16,7 +16,7 @@
         <div class="social">
             <a href="#about">About</a>
             <a href="" >Projects</a>
-            <a href="https://docs.google.com/document/d/1_isiPrM23Ck7S9iJlKkDUIatsgdHHE8qvPzXVxylLy4/edit" class="resume">Resume</a>
+            <a href="https://docs.google.com/document/d/1TOjhQdBlQxfsSg-di7QiYgKkBeh6A3KAOUtI8PBBgiE/edit" class="resume">Resume</a>
             <a href="#Contact" >Contact</a>
         </div>
     </nav>
@@ -27,9 +27,9 @@
             </div>
             <h5> Enthusiastic Computer Science student with a passion for web development and a strong foundation in front-end technologies.</h5>
             <div class="media">
-                <i class='bx bxl-twitter' ></i>
-                <i class='bx bxl-instagram'></i>
-                <i class='bx bxl-linkedin'></i>
+              <a href="https://x.com/DEEP_1105_"><i class='bx bxl-twitter' ></i></a>  
+              <a href="https://www.instagram.com/deep_0.5_/">  <i class='bx bxl-instagram'></i></a> 
+               <a href="http://www.linkedin.com/in/deeppatel5"><i class='bx bxl-linkedin'></i></a> 
             </div>
         </div>
         <div class="right">
@@ -99,5 +99,17 @@
             </form>
         </div>
     </main>
+    <script>
+            // Email validation
+            const email = document.getElementById('email').value;
+            const emailError = document.getElementById('emailError');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                emailError.textContent = 'Please enter a valid email';
+                valid = false;
+            } else {
+                emailError.textContent = '';
+            }
+    </script>
 </body>
 </html>
