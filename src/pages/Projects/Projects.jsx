@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Stratik",
     description:
-      "OpenAI API-powered web app that converts competitive team data into structured strategic insights, weaknesses, and counter-strategy recommendations. Built with React, TypeScript, Node.js, and Express (Dec 2025 – Jan 2026).",
+      "OpenAI-powered web app that converts competitive team data into structured strategic insights, weaknesses, and counter-strategy recommendations.",
     techStack: ["React", "TypeScript", "Node.js", "Express", "OpenAI API"],
     src: "Screenshot 2026-02-03 at 11.05.02 AM.png",
     link: "",
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "CSync",
     description:
-      "Full-stack platform connecting CS students for projects (100+ active users). Includes secure auth, RESTful CRUD APIs, caching, and real-time chat with WebSockets. Built with React, Tailwind CSS, Node.js, Express, PostgreSQL, AWS, and Supabase (Oct 2025 – Dec 2025).",
+      "Full-stack platform connecting CS students for projects (100+ active users). Includes secure auth, CRUD APIs, caching, and real-time chat.",
     techStack: [
       "React",
       "Tailwind CSS",
@@ -43,7 +43,7 @@ const projects = [
   {
     title: "CampSpotter",
     description:
-      "Camping review platform for discovering, reviewing, and rating campgrounds (50+ registered users). Designed a RESTful API with 12 endpoints using Node.js, Express, MongoDB, and Mongoose (Dec 2024 – Jan 2025).",
+      "Camping review platform for discovering, reviewing, and rating campgrounds (50+ registered users). Includes a well-structured REST API with 12 endpoints.",
     techStack: ["Node.js", "Express", "MongoDB", "Mongoose"],
     src: "Screenshot 2026-02-06 at 12.30.31 AM.png",
     link: "",
