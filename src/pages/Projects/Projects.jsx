@@ -13,6 +13,7 @@ const projects = [
     title: "Stratik",
     description:
       "OpenAI API-powered web app that converts competitive team data into structured strategic insights, weaknesses, and counter-strategy recommendations. Built with React, TypeScript, Node.js, and Express (Dec 2025 – Jan 2026).",
+    techStack: ["React", "TypeScript", "Node.js", "Express", "OpenAI API"],
     src: "Screenshot 2026-02-03 at 11.05.02 AM.png",
     link: "",
     imageFallback: "rock.jpg",
@@ -23,6 +24,16 @@ const projects = [
     title: "CSync",
     description:
       "Full-stack platform connecting CS students for projects (100+ active users). Includes secure auth, RESTful CRUD APIs, caching, and real-time chat with WebSockets. Built with React, Tailwind CSS, Node.js, Express, PostgreSQL, AWS, and Supabase (Oct 2025 – Dec 2025).",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "AWS",
+      "Supabase",
+      "WebSockets",
+    ],
     src: "Screenshot 2026-02-06 at 12.18.16 AM.png",
     link: "https://csync.tech/",
     imageFallback: "tree.jpg",
@@ -33,6 +44,7 @@ const projects = [
     title: "CampSpotter",
     description:
       "Camping review platform for discovering, reviewing, and rating campgrounds (50+ registered users). Designed a RESTful API with 12 endpoints using Node.js, Express, MongoDB, and Mongoose (Dec 2024 – Jan 2025).",
+    techStack: ["Node.js", "Express", "MongoDB", "Mongoose"],
     src: "Screenshot 2026-02-06 at 12.30.31 AM.png",
     link: "",
     imageFallback: "water.jpg",
@@ -135,6 +147,7 @@ export default function Projects() {
                 title={project.title}
                 color={project.color}
                 description={project.description}
+                techStack={project.techStack}
                 progress={scrollYProgress}
                 range={[i * 0.25, 1]}
                 targetScale={targetScale}
@@ -152,6 +165,7 @@ function Card({
   i,
   title,
   description,
+  techStack,
   url,
   fallbackUrl,
   color,
@@ -306,6 +320,16 @@ function Card({
               <p className="text-sm md:text-base text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-none max-w-md">
                 {description}
               </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {(techStack || []).map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-[11px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-gray-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="mt-4 md:mt-auto pt-4">
@@ -365,6 +389,7 @@ Card.propTypes = {
   i: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
   url: PropTypes.string.isRequired,
   fallbackUrl: PropTypes.string,
   color: PropTypes.string.isRequired,
