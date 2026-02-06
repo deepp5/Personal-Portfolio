@@ -92,7 +92,7 @@ const SkillsSection = () => {
           icon: <SiC className="w-4 h-4 text-[#A8B9CC]" />,
         },
         {
-          name: "C/C++",
+          name: "C++",
           icon: <SiCplusplus className="w-4 h-4 text-[#00599C]" />,
         },
         {
@@ -102,14 +102,6 @@ const SkillsSection = () => {
         {
           name: "Swift",
           icon: <SiSwift className="w-4 h-4 text-[#FA7343]" />,
-        },
-        {
-          name: "Golang",
-          icon: <SiGo className="w-4 h-4 text-[#00ADD8]" />,
-        },
-        {
-          name: "Ruby",
-          icon: <SiRuby className="w-4 h-4 text-[#CC342D]" />,
         },
       ],
     },
