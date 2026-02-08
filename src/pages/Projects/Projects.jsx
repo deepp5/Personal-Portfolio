@@ -61,7 +61,6 @@ export default function Projects() {
   });
 
   useEffect(() => {
-    // Add specific styles for 1366x768 resolution
     const style = document.createElement("style");
     style.textContent = `
       @media screen and (width: 1366px) and (height: 768px),
@@ -110,7 +109,7 @@ export default function Projects() {
         className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#04081A] via-[#060B22] to-[#04081A]"
         ref={container}
       >
-        {/* Base background */}
+        {}
         <div className="absolute inset-0 bg-[#04081A]" />
 
         {/* Grid background */}
