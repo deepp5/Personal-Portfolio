@@ -112,10 +112,10 @@ export default function Projects() {
         {}
         <div className="absolute inset-0 bg-[#04081A]" />
 
-        {/* Grid background */}
+        {}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(50,50,70,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(50,50,70,0.15)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_70%,transparent_100%)]" />
 
-        {/* Floating particles */}
+        {}
         <div className="absolute inset-0">
           {[...Array(20)].map((_, i) => (
             <div
@@ -130,7 +130,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Ambient glow blobs */}
+        {}
         <div className="pointer-events-none absolute top-20 left-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="pointer-events-none absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
@@ -182,11 +182,9 @@ function Card({
       return value;
     if (value.startsWith("/")) return value;
 
-    // If the image exists in src/assets (any subfolder), use the bundled URL.
     const directKey = `../../assets/${value}`;
     if (assetImages[directKey]) return assetImages[directKey];
 
-    // Otherwise, try matching by filename at the end of the path.
     const matchKey = Object.keys(assetImages).find((k) =>
       k.endsWith(`/${value}`)
     );
@@ -198,7 +196,6 @@ function Card({
   const buildCandidates = (value) => {
     if (!value) return [];
 
-    // Some macOS screenshot filenames contain narrow no-break spaces or non-breaking spaces.
     const cleaned = value.replace(/[\u202F\u00A0]/g, " ");
     const narrowAll = cleaned.replace(/ /g, "\u202F");
 
