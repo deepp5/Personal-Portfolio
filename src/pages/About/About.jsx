@@ -16,13 +16,13 @@ export default function About() {
             <p className="text-white">
               I’m majoring in Computer Science and Mathematics, and I love the
               problem-solving side of both breaking big challenges into clear,
-              logical steps. I bring that same mindset to the gym too : show up,
+              logical steps. I bring that same mindset to the gym too show up,
               stay consistent, and keep improving.
             </p>
 
             <p className="text-white">
               Outside of coding, you’ll usually find me dancing or playing
-              pickleball same energy: discipline, consistency, and teamwork.
+              pickleball same energy discipline, consistency, and teamwork.
             </p>
 
             <div className="pt-2">
