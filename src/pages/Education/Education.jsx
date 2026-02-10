@@ -70,7 +70,6 @@ const EducationSection = () => {
   const getTheme = (school) => {
     const isUIC = school.toLowerCase().includes("illinois chicago");
 
-    // Brand-ish colors (use static Tailwind classes; Tailwind can't parse runtime string interpolation)
     const uicRed = "#D50032";
 
     if (isUIC) {
