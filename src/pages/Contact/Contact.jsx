@@ -67,11 +67,9 @@ export default function Contact() {
       return;
     }
 
-    // Create a new FormData object to send to Web3Forms API
     const form = new FormData();
     form.append("access_key", accessKey);
 
-    // Web3Forms recommended fields
     form.append("from_name", formData.name);
     form.append("replyto", formData.email);
 
@@ -81,7 +79,6 @@ export default function Contact() {
     form.append("subject", formData.subject || "New Contact Form Submission");
     form.append("message", formData.message);
 
-    // Honeypot (spam protection) – must remain empty
     form.append("botcheck", "");
 
     try {
@@ -126,7 +123,7 @@ export default function Contact() {
 
   return (
     <main className="relative overflow-hidden min-h-screen pt-20 lg:pt-0 bg-[#04081A] text-white">
-      {/* Base background */}
+      {}
       <div className="absolute inset-0 bg-[#04081A]" />
 
       {/* Grid background */}
