@@ -111,10 +111,10 @@ const EducationSection = () => {
 
   return (
     <section className="min-h-screen relative overflow-hidden py-40 bg-[#04081A]">
-      {/* Grid Background */}
+      {}
       <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(50,50,70,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(50,50,70,0.15)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_70%,transparent_100%)]" />
 
-      {/* Floating Particles */}
+      {}
       <div className="absolute inset-0 z-0">
         {[...Array(20)].map((_, i) => (
           <div
@@ -130,7 +130,7 @@ const EducationSection = () => {
         ))}
       </div>
 
-      {/* Ambient Glow Blobs */}
+      {}
       <div className="pointer-events-none absolute top-20 left-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse z-0" />
       <div className="pointer-events-none absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000 z-0" />
 
